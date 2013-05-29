@@ -1,0 +1,176 @@
+4010-350 Process & Reflection
+Rails – Thought Share
+
+Name:Justin Peterson
+
+================================================================
+Level 0 – Setup
+Estimated Time	0H 10M
+
+Plan for this level:Follow the basic setup commands and correct 
+the two spelling errors. 
+
+Level 1 – Complete
+Actual Time	0H 10M
+Found the two spelling errors:
+"following" button was spelled "folowing". corrected in app/views/thoughts
+"follows" was spelled "folows". corrected in thoughtshare/db/seeds
+
+Project was simple to set up!
+
+Ratio: 1.00
+
+
+================================================================
+Level 1 – Start
+Estimated Time	1H 0M
+Plan for this level:
+
+Utilize regex expressions to check the format of names and URLs 
+for a specific thinker, and use other validation methods in order
+to check the length of the name of a thinker, or of a thought itself. 
+
+Level 1 – Complete
+Actual Time	1H 0M
+The regular expressions were tricky to figure out, but every other 
+nessescary call was located in the "validation in rails" documentation 
+included witht he project. Once I was able to determine the format 
+of Thinker's names and their URLs, the rest of this part was simple.
+
+Ratio: 1.00
+Total Ratio: 1.00
+This portion of th eproject went well, and according to plan. 
+================================================================
+Level 2 – Start
+Estimated Time	0H 30M
+Plan for this level:
+Search throught the project to determine where the logic to create
+display filters for thoughts is. Mist likely there is some unimplemented 
+logic that actually checks for when a user clicks the "Mine" link. 
+Once this is discovered, I'll add logic that only displays a thought 
+if it cooresponds to the currentactive thinker.  
+
+Level 2  – Complete
+Actual Time	0H 20M
+I discovered that the logic I had to implement resided in the controller
+for a thought. This didn't make sense to me at first, but after analyzing the 
+model for a thought, I realized that it made sense that a though keeps track 
+of the "mine" keyword, rather than a thinker keeping track of it. 
+The declarations made that descrive relations of a thinker to a thought (and
+vise versa) helped me to understand where the change had to be made. After
+realizing where the change was nessescary, it was simple to check the active
+thinker id against the id assosciated with the thought to create the filter.
+
+Ratio: 0.66
+Total Ratio: 0.89
+I believe that this part took a little shorter than expected because
+I was familiar with the file where the change needed to be implemented. 
+When I initialy went over th eproject, I noticed that there wasnt a "mine"
+keyword before I actually moved on to part 2 of the project.  
+
+================================================================
+Level 3 – Start
+Estimated Time	1H 0M
+Plan for this level: Generate a new html.erb file that displays
+all of the thumbers of a specific thought, as well as the thought 
+and thinker themselves. The logic to access a specific thought
+object will be kept in the controller. As long as I can access
+the specific thought that is thumbed, then I will be able to
+access all of the otherinformation that I need. After this is done, 
+I just need to generate html code to meet format constraints of the 
+site and project. 
+
+Level 3 – Complete
+Actual Time	1H 0M
+This part of the project went quite smoothly. The only hiccup I
+encountered was the fact that I didn't quite understand the relationship 
+between a thought and its thumbs. When I looked at the index.html 
+code for the Thoughts view, I was able to see how to access all of the
+information that I needed using only a thought object. The hint 
+the project guidelines gave us saying to look at the console to
+determine the thumb ID was beneficial, 
+and I would have most likely spent some time struggling to 
+find this piece of information otherwise.
+
+Ratio: 1.0
+Total Ratio: 0.92
+This part of the project went according to plan.
+
+================================================================
+Level 4 – Start
+Estimated Time	1H 0M
+Plan for this level: Create a new column in the thinker table to 
+store a thinker's email. Then, I will change the databse seeds to 
+that each philosopher that is already generated has its own email. 
+After this, I will have to do some HTML edits in order to create new
+input fields, and other edits to account for the addition of an email
+for each thinker. 
+
+Level 4 – Complete
+Actual Time	0H 45M
+I did not know that the database would have to be reseeded each time 
+an edit was made, and had to look up some command line rake prompts to 
+migrate changes and reseed the database. When looking through the schema
+file after adding an email property to the database, i noticed that
+an email field had appropriately appeared. I then just had to edit the 
+HTML in order to generate an input field for the email, as well as to 
+generate a header for the "thinkers" table and the thinker profile. 
+
+Ratio: .75
+Total Ratio: 0.88
+When I had run into issuses during this part of the project, my TA 
+showed me that I had to run the migrate and seed commands to re-populate
+the server. Once I overcame this problem, I was able to quickly finish
+the rest of this part of the project. 
+================================================================
+Level 5(Bonus) – Start
+Estimated Time	0H 30M
+Plan for this level: Check back on the RoR validation guides and 
+see what type of uniqueness validation is nessescary to check
+a thumb against a thinker. This may be tricky since a thumb is related
+to both a thinker and a thought.
+
+Level 5 – Complete
+Actual Time (Did not complete bonus)
+Went through validation of thumbs in the thumb.rb model with my TA,
+but still couldn't figure out why my validation check was not being
+reached when creating a new thumb object. 
+
+================================================================
+Overall Summary
+
+Estimated Total Time	3H 40M  //Didnt complete part 5 bonus. 
+Actual Total Time	3H 15M
+Ratio Value: 0.89 (Just barely more than .1 off!)
+
+Project reflection:
+
+The total ratio had fluxuated between values that were slightly
+below 1.0 throught the project. I believe that I made an accurate
+estimation for each part of the project, and that some of the variations
+in time from my estimated time were because of the use of Ruby on Rails
+documentation. It was simple to find out how to do tasks such as 
+validation, and to look up various rails server commands. I believe
+that I was constantly optimistic throughout the project, which 
+definately helped me to complete each part. I felt that I developed
+a greater understanding of Rails after completing this project. 
+If I can bring this level of optimism into future projects, I could 
+drastically improve my performance. 
+
+I believe that the use of Ruby was not incredibly prominent in this project.
+I was easily able to complete the Ruby portions of the project with an 
+introuductory knowledge of the language. I believe that the project 
+focused more heavily on the Rails components, and for good reason. This
+project allowed me to learn how to edit database tables stright from the 
+command line, and showed me what was nessescary to generate new components both 
+manually, and through commands in Rails. Some of the specific details
+of Rails were difficult to grasp, and I believe that I would need more 
+experience to create something of this magnitude from scratch,
+but this was a great introductory project to learn the basics of Rails. 
+
+I believe that th eproject was well structured, and that it covered many
+key points that caused me to research several different components of Rails.
+I see how this technology could be useful, even on a very large scale. I believe
+that the actual format of the project was very effective as well. 
+
+

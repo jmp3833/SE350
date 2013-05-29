@@ -1,0 +1,42 @@
+Level #1 -convert the code to Produce the sorted list.
+    
+    To be completed:
+	Create an empty list node based on the struct
+	Make sure that nodes can be assembled into a singly linked list
+	Make the nodes sort based on their frequecy count
+
+
+Initial estimate = 2 hours
+Actual time = 2.5 hours
+
+	***Some of the fnctionality of the ordered list may have to be tested 
+	again once sorted list traversal is implemented.*** 
+
+Level #2 (after task #1 completed) - traverse the sorted list:
+    
+Initial estimate  = 2 hours
+Re-estimate after level #1 completed = 1.5 hours
+Actual time = 2 hours
+
+	Was able to traverse the sorted list and generate a proper binary tree.
+	There was some issues getting the tree to form correctly but
+	after some troubleshooting and debugging, I was able to sort out the issues. 
+
+Level #3 (after task #2 completed) - process the final tree:
+   
+Initial estimate = 1 hour
+Re-estimate after level #2 completed = 1.5 hours
+Actual time = 2 hours
+
+	The algorithm was difficult to develop, and still does not completely 
+	function. it still generates an infix value, but some of the infix values 
+	do not match up with the desired test output. 
+
+Project Total 6.5 hours
+
+Total original estimate = 5 hours   
+Total revised estimates = 6 hours
+Actual = 6.5 hours
+                      (23% over original, 8.3% over revised)
+
+Overall, a nice way to practice the use of pointers and close out the C unit of PSE.

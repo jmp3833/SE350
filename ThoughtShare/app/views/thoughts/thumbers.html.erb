@@ -1,0 +1,23 @@
+<!--thumbers.html.erb-->
+<!--Displays the thumbers of a thought-->
+
+<h1><%=@thought.thought%></h1>
+<h3>A thought by <%=@thought.thinker.name%></h3>
+<h2>Thumbers of this thought</h2>
+
+<%if @thought.thumbs.size > 0%>
+  <%nameArray = []%>
+  <%index = 0%>
+  <%@thought.thumbs.each do |thumb|%>
+    <%nameArray[index] = thumb.thinker.name%>
+	<%index += 1%>
+  <%end%>
+  <%nameArray.uniq!%>
+  <%nameArray.each do |name|%>
+    <h3><%=name%></h3>
+  <%end%>
+<%else%>
+  <h3><%="No one thumbed this thought!"%></h3>
+<%end%>
+<br />
+

@@ -1,0 +1,90 @@
+4010-350 Process & Reflection
+Ruby – Diet Manager
+
+Name: Justin Peterson
+
+================================================================
+Level 1 – Food DB Load – Start
+Estimated Time	1H 30M
+
+Plan for this level:Create a generaly formatted text file to be 
+parsed into the program and generate a FoodDB class (a hashmap of 
+BasicFood objects which map to their number of calories, and a
+hashmap of recipe objects, which maps to an array of BasicFood
+objects that compose the recipe). Then I 
+will generate a method to print every element of the database, 
+and create a basic CLI to handle the various commands to be acted
+out on the database.  
+
+Level 1 – Food DB Load – Complete
+Actual Time	3H 0M
+I underestimated how tricky the instance variable syntax in Ruby
+would be to figure out for the first time, I had to spend some time
+doing research and and discovered how Ruby replaces setters and getters 
+with the attr_accessor declaration. After this was discovered,
+the development went smoothly and the only other challenge was print
+formatting. 
+================================================================
+Level 2 – Print & Find – Start
+Estimated Time	0H 30M
+Plan for this level:Use the previously written print method and 
+the menu hashmap to look up items and prefixes, and print
+this information to the console. 
+
+Level 2  – Print & Find – Complete
+Actual Time	1H 0M
+
+There was some issues getting the input string to format correctly,
+but once this obstacle was overcome, it was easy to create the two 
+methods using the print helper method. 
+================================================================
+Level 3 – Database Update – Start
+Estimated Time	0H 30M
+
+Level 3 – Database Update  – Complete
+Actual Time	2H 0M
+
+I kept having errors translating foods from the csv file to 
+actual food objects when using the command line interface. 
+Once I was able to handle the string formatting nessescary,
+I was able to complete part 3. 
+
+================================================================
+Level 4 – Logging Foods – Start
+Estimated Time	1H 0M
+Plan for this level:
+Create a logger class which can access the menu database object
+and use the Ruby date module to sort the dates by ascending date
+when printing all of the logs. 
+ 
+Level 4 – Logging Foods – Complete
+Actual Time	2H 0M
+Had trouble getting the showAll method to print the date before 
+each day, but overall this part went smoothly.
+================================================================
+Level 5 – Show & Delete – Start
+Estimated Time	1H MM
+Plan for this level: Utilize the logic in the how all method to a show 
+a specific element, and search through the log file in order to remove 
+an element from the log based on its name. 
+
+Level 5 – Show & Delete – Complete
+Actual Time	HH MM
+Did not complete this method. 
+================================================================
+Overall Summary
+Estimated Total Time	4H 0M
+Actual Total Time	8H 0M
+Project reflection:
+
+Because of the size of the project, and the complications that 
+I ended up encountering with file I/O, I was unable to complete the 
+final portion of the project. Implementation of classes and objects in
+Ruby is simple and effective, and if I had partitioned my time more 
+effectively through the project, I would have been much more successul. 
+Implementing each level wasn't nessecarily difficult, but it became time
+consuming as integration errors began to spring up. 
+
+This project really hammered home the use of the DRY principle, and how it can 
+clean up code. If I had kept my code more DRY throughout the process, I believe 
+that I could have been able to implement level 5 as well. 

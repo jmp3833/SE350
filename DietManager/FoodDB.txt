@@ -1,0 +1,8 @@
+Peanut Butter,b,100
+Jelly,b,100
+Bread,b,100
+PB&J Sandwich,r,Peanut Butter,Jelly,Bread,Bread
+Peanut Bread,r,Peanut Butter,Bread
+Fritters,b,1000
+Apple,b,150
+Apple Pie,r,Apple,Apple,Bread

@@ -1,0 +1,4 @@
+Jordan 100
+Paul 75
+Ethan 60
+Justin 90

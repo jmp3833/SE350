@@ -1,0 +1,8 @@
+Orange,b,67
+Bread,b,78
+Peanut Butter,b,175
+Jelly,b,155
+PB&J Sandwich,r,Bread,Bread,Peanut Butter,Jelly
+TestFood,b,100
+TestFood2,b,150
+PBJELLY,r,Peanut Butter,Jelly
